@@ -2,3 +2,24 @@
   font-size: 20px;
   font-weight: 500;
 }
+.list-actors {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.actor {
+  width: calc(100%/4);
+  padding: 10px;
+  transition: 250ms;
+  border-radius: 25px;
+}
+
+.actor:hover {
+  background-color: #90C3E8;
+}

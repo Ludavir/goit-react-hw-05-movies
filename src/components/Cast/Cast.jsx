@@ -6,7 +6,7 @@ const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState([]);
   const elements = cast.map(({ cast_id, character, name, profile_path }) => (
-    <li key={cast_id}>
+    <li key={cast_id} className='actor'>
       <img src={`https://image.tmdb.org/t/p/w200${profile_path}`} alt="" />
       <h2 className="cast">{name}</h2>
       <h2 className="cast">Character: {character}</h2>
@@ -23,7 +23,7 @@ const Cast = () => {
     };
     fetchMovie();
   }, [movieId]);
-  return <ul>{elements}</ul>;
+  return <ul className='list-actors'>{elements}</ul>;
 };
 
 export default Cast;
