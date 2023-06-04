@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <h1 className="title">Trending today</h1>
-      <ul className="list-movies">{results}</ul>;
+      <ul className="list-movies">{results}</ul>
     </>
   );
 };

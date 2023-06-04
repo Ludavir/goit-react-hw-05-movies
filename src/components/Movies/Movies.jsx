@@ -30,15 +30,16 @@ const Movies = () => {
         }}
       >
         <input
-          className="input"
+          className="input-search"
           onChange={({ target }) => {
             setSearch(target.value);
             setSearchParams({ query: target.value });
           }}
           type="text"
           name="search"
+          placeholder='Movie name'
         />
-        <button type="submit" className="button">
+        <button type="submit" className="button-4">
           Search
         </button>
       </form>
