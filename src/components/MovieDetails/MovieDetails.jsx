@@ -14,7 +14,7 @@ const MovieDetails = () => {
   const [year, setYear] = useState();
   const { movieId } = useParams();
   const { backdrop_path, id, title, overview, genres } = movie;
-  const genresArray = genres?.map(({ name }) => name);
+  const genresArray = genres?.map(({ name }) => name + " • ");
   const location = useLocation();
   const navigate = useNavigate();
   const from = location.state?.from || '/';
