@@ -1,0 +1,26 @@
+.nav {
+  width: 100%;
+  border-bottom: 3px solid #bbbbbb;
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.link {
+  border-radius: 10px;
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all linear 250ms;
+  color: black;
+}
+
+.link:hover {
+  background-color: #5783db;
+  color: #fff;
+}
+
+.link:global(.active) {
+  color: red;
+}
