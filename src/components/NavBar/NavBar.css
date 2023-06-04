@@ -2,10 +2,11 @@
   width: 100%;
   border-bottom: 3px solid #bbbbbb;
 }
-.list {
+.list-bar {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin: 0;
 }
 .link {
   border-radius: 10px;

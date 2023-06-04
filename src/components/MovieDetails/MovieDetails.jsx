@@ -44,10 +44,10 @@ const MovieDetails = () => {
           alt={title}
           src={`https://image.tmdb.org/t/p/w500${backdrop_path}`}
         />
-        <ul className="list">
+        <ul className="list-info">
           <li>
             <h1>
-              {title} {year}
+              {title} / {year}
             </h1>
           </li>
           <li>
@@ -61,8 +61,8 @@ const MovieDetails = () => {
         </ul>
       </div>
 
-      <p>Additional information</p>
-      <ul>
+      <p className='tittle-info'>Additional information</p>
+      <ul className='list-info'>
         <li>
           <Link
             className="link"

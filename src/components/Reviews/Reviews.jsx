@@ -22,6 +22,6 @@ const Reviews = () => {
     };
     fetchMovie();
   }, [movieId]);
-  return <ul>{elements}</ul>;
+  return <ul className='list-aux'>{elements}</ul>;
 };
 export default Reviews;
